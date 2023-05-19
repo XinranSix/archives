@@ -1,0 +1,50 @@
+{
+    find_program = {
+        ["D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe"] = [[D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\cl.exe]],
+        git = "git",
+        gzip = "gzip",
+        unzip = "unzip",
+        tar = "tar",
+        ["cl.exe"] = [[D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\cl.exe]],
+        ping = "ping",
+        zig = false
+    },
+    find_package_windows_x64_fetch_package_xmake = {
+        ["xmake::eigen_1af8f25c61b04e19afd2699bba8d04c0_release_3.4.0_external"] = {
+            version = "3.4.0",
+            license = "MPL-2.0",
+            sysincludedirs = {
+                [[C:\Users\yaojie\AppData\Local\.xmake\packages\e\eigen\3.4.0\1af8f25c61b04e19afd2699bba8d04c0\include]],
+                [[C:\Users\yaojie\AppData\Local\.xmake\packages\e\eigen\3.4.0\1af8f25c61b04e19afd2699bba8d04c0\include\eigen3]]
+            }
+        }
+    },
+    find_program_fetch_package_system = {
+        cmake = [[D:\Program Files\CMake\bin\cmake]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcc = {
+        ["cl.exe"] = [[D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\cl.exe]]
+    },
+    find_programver_fetch_package_system = {
+        ["D:\\Program Files\\CMake\\bin\\cmake"] = "3.25.0-rc1"
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcxx = {
+        ["cl.exe"] = [[D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\cl.exe]]
+    },
+    ["lib.detect.has_flags"] = {
+        ["windows_x64_D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe__cxx_cxflags__cl_external_includedir"] = true,
+        ["windows_x64_D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe__cxx_cxflags__cl_sourceDependencies"] = true
+    },
+    find_programver = {
+        ["D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe"] = false
+    },
+    find_programver_fetch_package_xmake = {
+        ["D:\\Program Files\\CMake\\bin\\cmake"] = "3.25.0-rc1"
+    },
+    find_program_fetch_package_xmake = {
+        cmake = [[D:\Program Files\CMake\bin\cmake]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolld = {
+        ["link.exe"] = [[D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe]]
+    }
+}

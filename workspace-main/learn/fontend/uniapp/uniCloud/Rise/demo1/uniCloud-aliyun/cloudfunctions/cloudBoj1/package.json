@@ -1,0 +1,7 @@
+{
+  "name": "cloudBoj1",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

@@ -1,0 +1,9 @@
+servers:
+  ipAddress: 192.168.0.1
+  port: 8888
+  timeout: -1
+  serverTimeout: 3
+  dataSize: 10MB
+
+datasource:
+  driverClassName: com.mysql.jdbc.Driver789

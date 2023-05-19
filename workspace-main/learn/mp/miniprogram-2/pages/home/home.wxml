@@ -1,0 +1,2 @@
+<button bindtap="getInfo">发起 GET 请求</button>
+<button bindtap="postInfo">发起 POST 请求</button>

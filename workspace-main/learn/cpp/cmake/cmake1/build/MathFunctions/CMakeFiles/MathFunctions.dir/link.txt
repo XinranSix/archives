@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libMathFunctions.a CMakeFiles/MathFunctions.dir/mysqrt.cpp.obj
+C:\MinGW\bin\ranlib.exe libMathFunctions.a

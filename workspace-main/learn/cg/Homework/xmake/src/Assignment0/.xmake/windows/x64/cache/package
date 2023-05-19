@@ -1,0 +1,19 @@
+{
+    eigen = {
+        version = "3.4.0",
+        license = "MPL-2.0",
+        sysincludedirs = {
+            [[C:\Users\yaojie\AppData\Local\.xmake\packages\e\eigen\3.4.0\1af8f25c61b04e19afd2699bba8d04c0\include]],
+            [[C:\Users\yaojie\AppData\Local\.xmake\packages\e\eigen\3.4.0\1af8f25c61b04e19afd2699bba8d04c0\include\eigen3]]
+        },
+        __requirestr = "eigen",
+        installdir = [[C:\Users\yaojie\AppData\Local\.xmake\packages\e\eigen\3.4.0\1af8f25c61b04e19afd2699bba8d04c0]],
+        envs = {
+            PATH = {
+                [[C:\Users\yaojie\AppData\Local\.xmake\packages\e\eigen\3.4.0\1af8f25c61b04e19afd2699bba8d04c0\bin]],
+                [[C:\Users\yaojie\AppData\Local\.xmake\packages\c\cmake\3.24.2\5430022e3acc47008f94857b498c53c6\bin]]
+            }
+        },
+        __enabled = true
+    }
+}

@@ -1,0 +1,11 @@
+server:
+  port: 80
+logging:
+  group:
+    ebank: com.itheima.controller,com.itheima.service,com.itheima.dao
+  level:
+    root: info
+    # com.itheima.controller: debug
+    ebank: warn
+  file:
+    name: server.log

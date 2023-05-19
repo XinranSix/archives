@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F0B28D9B-2B91-38C0-B7B2-D819160D5B30}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>\usr\local\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\learn\cg\Homework\normal\Assignment2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace/learn/cg/Homework/normal/Assignment2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/learn/cg/Homework/normal/Assignment2 -BD:/workspace/learn/cg/Homework/normal/Assignment2/build --check-stamp-file D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindTIFF.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;D:\software\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace/learn/cg/Homework/normal/Assignment2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/learn/cg/Homework/normal/Assignment2 -BD:/workspace/learn/cg/Homework/normal/Assignment2/build --check-stamp-file D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindTIFF.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;D:\software\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace/learn/cg/Homework/normal/Assignment2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/learn/cg/Homework/normal/Assignment2 -BD:/workspace/learn/cg/Homework/normal/Assignment2/build --check-stamp-file D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindTIFF.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;D:\software\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace/learn/cg/Homework/normal/Assignment2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/workspace/learn/cg/Homework/normal/Assignment2 -BD:/workspace/learn/cg/Homework/normal/Assignment2/build --check-stamp-file D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindDependencyMacro.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindTIFF.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\FindThreads.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig-version.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVConfig.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules-release.cmake;D:\software\vcpkg\installed\x64-windows\share\opencv\OpenCVModules.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;D:\software\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-debug.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config-release.cmake;D:\software\vcpkg\installed\x64-windows\share\quirc\quirc-config.cmake;D:\software\vcpkg\installed\x64-windows\share\tiff\vcpkg-cmake-wrapper.cmake;D:\software\vcpkg\scripts\buildsystems\vcpkg.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeCXXCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeRCCompiler.cmake;D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\3.25.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\learn\cg\Homework\normal\Assignment2\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\workspace\learn\cg\Homework\normal\Assignment2\build\ZERO_CHECK.vcxproj">
+      <Project>{FCB5C01E-0962-3EB0-9BE8-45C30333568B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\workspace\learn\cg\Homework\normal\Assignment2\build\Rasterizer.vcxproj">
+      <Project>{E3C09031-5541-3E40-B99A-933C4D4127B5}</Project>
+      <Name>Rasterizer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

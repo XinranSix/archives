@@ -1,0 +1,53 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCInformation.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCXXInformation.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeDependentOption.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeGenericSystem.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeRCInformation.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CheckIncludeFile.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/CheckLibraryExists.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC-C.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC-CXX.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Compiler/MSVC.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/FindPackageMessage.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/FindTIFF.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/FindThreads.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows-MSVC-C.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows-MSVC.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Platform/Windows.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/Platform/WindowsPaths.cmake
+D:/Program Files/CMake/share/cmake-3.25/Modules/SelectLibraryConfigurations.cmake
+D:/software/vcpkg/installed/x64-windows/share/opencv/OpenCVConfig-version.cmake
+D:/software/vcpkg/installed/x64-windows/share/opencv/OpenCVConfig.cmake
+D:/software/vcpkg/installed/x64-windows/share/opencv/OpenCVModules-debug.cmake
+D:/software/vcpkg/installed/x64-windows/share/opencv/OpenCVModules-release.cmake
+D:/software/vcpkg/installed/x64-windows/share/opencv/OpenCVModules.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/protobuf-config-version.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/protobuf-module.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/protobuf-options.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-debug.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-release.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets.cmake
+D:/software/vcpkg/installed/x64-windows/share/protobuf/vcpkg-cmake-wrapper.cmake
+D:/software/vcpkg/installed/x64-windows/share/quirc/quirc-config-debug.cmake
+D:/software/vcpkg/installed/x64-windows/share/quirc/quirc-config-release.cmake
+D:/software/vcpkg/installed/x64-windows/share/quirc/quirc-config.cmake
+D:/software/vcpkg/installed/x64-windows/share/tiff/vcpkg-cmake-wrapper.cmake
+D:/software/vcpkg/scripts/buildsystems/vcpkg.cmake
+D:/workspace/learn/cg/Homework/normal/Assignment2/CMakeLists.txt
+D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/3.25.0-rc1/CMakeCCompiler.cmake
+D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/3.25.0-rc1/CMakeCXXCompiler.cmake
+D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/3.25.0-rc1/CMakeRCCompiler.cmake
+D:/workspace/learn/cg/Homework/normal/Assignment2/build/CMakeFiles/3.25.0-rc1/CMakeSystem.cmake

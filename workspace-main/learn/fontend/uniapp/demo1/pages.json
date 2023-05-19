@@ -1,0 +1,47 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	{
+	    "path" : "pages/demo/demo",
+	    "style" :                                                                                    
+	    {
+	        "navigationBarTitleText": "vue demo",
+	        "enablePullDownRefresh": false
+	    }
+	    
+	},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "UNIAPP 零基礎入門",
+				"navigationBarBackgroundColor": "#1AA034" ,
+				"navigationBarTextStyle": "white"
+			}
+		},
+	    {
+	    	"path" : "pages/list/list",
+	    	"style" :                                                                                    
+	    	{
+	    		"navigationBarTitleText": "新聞列表",
+	    		"enablePullDownRefresh": false
+	    	}
+	    	
+	    }
+        ,{
+            "path" : "pages/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+       
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni 系列課程",
+		"navigationBarBackgroundColor": "#DD5347",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

@@ -1,0 +1,15 @@
+{
+    "id": "DCloud-HelloUTS",
+    "displayName": "HelloUTS",
+    "version": "1.0.3",
+    "description": "UTS示例项目",
+    "keywords": [
+        "UTS"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "uni-app前端项目模板"
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+d:\workspace\learn\rust\guessing_game\target\debug\deps\getrandom-fef59b6b82bad076.rmeta: C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\lib.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\error.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\util.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\error_impls.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\windows.rs
+
+d:\workspace\learn\rust\guessing_game\target\debug\deps\getrandom-fef59b6b82bad076.d: C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\lib.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\error.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\util.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\error_impls.rs C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\windows.rs
+
+C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\lib.rs:
+C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\error.rs:
+C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\util.rs:
+C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\error_impls.rs:
+C:\Users\yaojie\.cargo\registry\src\mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd\getrandom-0.2.8\src\windows.rs:

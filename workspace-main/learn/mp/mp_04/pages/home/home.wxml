@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<!-- <text class="g-red-text">pages/home/home.wxml</text>
+<view></view>
+<my-test1 max="9"></my-test1>
+<view></view>
+<my-test2 max="9"></my-test2> -->
+<!-- <my-test2></my-test2> -->
+<!-- <my-test3></my-test3> -->
+<my-test4>
+  <view slot="before">这是通过插槽提供的内容</view>
+  <view slot="after">这是通过插槽提供的内容</view>
+</my-test4>

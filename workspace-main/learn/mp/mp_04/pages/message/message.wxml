@@ -1,0 +1,4 @@
+<!--pages/message/message.wxml-->
+<text>pages/message/message.wxml</text>
+<view></view>
+<my-test2></my-test2>

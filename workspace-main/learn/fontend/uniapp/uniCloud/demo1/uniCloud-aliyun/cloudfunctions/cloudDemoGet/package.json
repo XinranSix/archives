@@ -1,0 +1,7 @@
+{
+  "name": "cloudDemoGet",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
