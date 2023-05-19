@@ -1,0 +1,47 @@
+@startuml
+abstract class AbstractExpression {
+    interpret():void
+}
+
+class TerminalExpression {
+}
+
+class NonTerminalExpression {}
+
+class Context {}
+
+class Client {}
+
+TerminalExpression --|> AbstractExpression
+NonTerminalExpression--|> AbstractExpression
+Client ..> AbstractExpression
+Client ..> Context 
+@enduml
+
+@startuml
+abstract class Expression {
+    interpret():void
+}
+
+class VarExpression {}
+
+class SymbolExpression {}
+
+class SubExpression {}
+
+class AddExpression {}
+
+class Calculator {}
+
+class Client {}
+
+VarExpression --|> Expression
+SymbolExpression o--|> Expression
+
+SubExpression --|> SymbolExpression
+AddExpression --|> SymbolExpression
+
+Calculator o-- Expression
+
+Client ..> Calculator
+@enduml

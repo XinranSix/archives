@@ -1,0 +1,84 @@
+@startuml
+abstract class Visitor {}
+
+class ConcreteVisitor {}
+
+class Element {
+    accept(visitor:Visitor):void
+}
+
+class ConcreteElement {
+    accept(visitor:Visitor):void
+}
+
+class ObjectStructure {
+    element:Element
+}
+
+class Client {}
+
+ConcreteVisitor --|> Visitor
+Element ..> Visitor
+ConcreteElement --|> Element
+ObjectStructure o-- Element
+Client ..> Visitor
+Client ..> ObjectStructure
+@enduml
+
+@startuml
+abstract class Action {
+    {abstract} getManResult(man:Man):void
+    {abstract} getWomanResult(Woman:woman):void
+}
+
+class Success {
+    getManResult(man:Man):void
+    getWomanResult(Woman:woman):void
+}
+
+class Fail {
+    getManResult(man:Man):void
+    getWomanResult(Woman:woman):void
+}
+
+class Wait {
+    getManResult(man:Man):void
+    getWomanResult(Woman:woman):void
+}
+
+abstract class Person {
+    {abstract} accept(action:Action):void
+}
+
+class Man {
+    accept(action:Action):void
+}
+
+class Woman {
+    accept(action:Action):void
+}
+
+class ObjectStructure {
+    peoples:List<Person>
+    attache(person:Person):void
+    detach(person:Person):void
+    display(action:Action):void
+}
+
+class Client {
+
+}
+
+Success --|> Action
+Fail --|> Action
+Wait --|> Action
+
+Man --|> Person
+Woman --|> Person
+
+Person -- Action
+Person --o ObjectStructure
+
+Client ..> Action
+Client ..> ObjectStructure
+@enduml

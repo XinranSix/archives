@@ -1,0 +1,105 @@
+@startuml
+Interface Iterator {
+    hasNext():boolean
+    next():E
+    remove():void
+}
+
+class ConcreteIterator1 {
+    hasNext():boolean
+    next():E
+    remove():void
+}
+
+class ConcreteIterator2 {
+    hasNext():boolean
+    next():E
+    remove():void
+}
+
+Interface Aggregate {
+    createIterator():Iterator
+}
+
+class ConcreteAggregate1 {
+    createIterator():Iterator
+    eles:ArrayList
+}
+
+class ConcreteAggregate2 {
+    createIterator():Iterator
+    eles:ArrayList
+}
+
+class Client {
+
+}
+
+ConcreteAggregate1 ..|> Aggregate
+ConcreteAggregate2 ..|> Aggregate
+ConcreteAggregate1 ..> ConcreteIterator1
+ConcreteAggregate2 ..> ConcreteIterator2
+
+ConcreteIterator1..|> Iterator
+ConcreteIterator2..|> Iterator
+
+Client ..> Aggregate
+Client ..> Iterator
+@enduml
+
+@startuml
+Interface Iterator {
+    hasNext():boolean
+    next():E
+    remove():void
+}
+
+class ComputerCollegeIterator {
+
+}
+
+class InfoCollegeIterator {
+
+}
+
+class Department {
+
+}
+
+Interface College {
+    createIterator():Iterator
+}
+
+class ComputerCollege {
+    createIterator():Iterator
+}
+
+class InfoCollege {
+    createIterator():Iterator
+}
+
+class OutputImpl {
+
+}
+
+class Client {}
+
+ComputerCollegeIterator ..|> Iterator
+InfoCollegeIterator ..|> Iterator
+
+Department --o ComputerCollegeIterator
+Department --o InfoCollegeIterator
+
+ComputerCollege ..|> College
+InfoCollege ..|> College
+
+ComputerCollege ..> ComputerCollegeIterator
+InfoCollege ..> InfoCollegeIterator
+
+Department --o ComputerCollege
+Department --o InfoCollege
+
+OutputImpl o-- College
+
+Client .up.> OutputImpl
+@enduml

@@ -1,0 +1,91 @@
+@startuml
+abstract class Duck {
+    quack():void
+    swim():void
+    fly():void
+    {abstract} display():void
+}
+
+class WildDuck {
+}
+
+class PekingDuck {
+}
+
+class ToyDuck {
+}
+
+WildDuck --|> Duck
+PekingDuck --|> Duck
+ToyDuck --|> Duck
+@enduml
+
+@startuml
+interface Strategy {
+    operation1():void
+    operation2():void
+}
+
+class ConcreteStrategyA {}
+
+class ConcreteStrategyB {}
+
+class Context {
+    strategy:Strategy
+}
+
+ConcreteStrategyA ..|> Strategy
+ConcreteStrategyB ..|> Strategy
+Context o-- Strategy
+@enduml
+
+@startuml
+interface FlyBehavior {
+    fly():void
+}
+
+class NoFlyBehavior {}
+
+class BadFlyBehavior {}
+
+class GoodFlyBehavior {}
+
+interface QuackBehavior {
+    quack():void
+}
+
+class GeGeQuackBehavior {}
+
+class GaGaQuackBehavior {}
+
+class NoQuackBehavior {}
+
+abstract class Duck {
+    flyBehavior:FlyBehavior
+    quackBehavior:QuackBehavior
+}
+
+class WildDuck {
+}
+
+class PekingDuck {
+}
+
+class ToyDuck {
+}
+
+NoFlyBehavior ..|> FlyBehavior
+GoodFlyBehavior ..|> FlyBehavior
+BadFlyBehavior ..|> FlyBehavior
+
+GeGeQuackBehavior ..|> QuackBehavior
+GaGaQuackBehavior ..|> QuackBehavior
+NoQuackBehavior ..|> QuackBehavior
+
+WildDuck --|> Duck
+PekingDuck --|> Duck
+ToyDuck --|> Duck
+
+Duck o-- FlyBehavior
+Duck o-- QuackBehavior
+@enduml

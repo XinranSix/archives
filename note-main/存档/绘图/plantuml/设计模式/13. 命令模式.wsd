@@ -1,0 +1,73 @@
+@startuml
+interface Command {
+    execute():void
+    undo():void
+}
+
+class ConcreteCommand {
+    execute():void
+    undo():void
+}
+
+class Receiver {
+    action():void
+}
+
+class Invoker {
+}
+
+class Client {
+}
+
+ConcreteCommand ..|> Command
+Receiver --o ConcreteCommand
+Command --o Invoker
+
+Client ..> Invoker
+Client ..> ConcreteCommand
+Client ..> ConcreReceiverteCommand
+@enduml
+
+@startuml
+interface Command {
+    execute():void
+    undo():void
+}
+
+class LightOnCommand {
+    execute():void
+    undo():void
+}
+
+class LightOffCommand {
+    execute():void
+    undo():void
+}
+
+class NoCommand{}
+
+class LightReceiver {}
+
+class RemoteController {
+    onCommands:Command[]
+    offCommands:Command[]
+}
+
+class Client {
+}
+
+LightOnCommand ..|> Command
+LightOffCommand ..|> Command
+
+LightReceiver o-- LightOnCommand
+LightReceiver o-- LightOffCommand
+
+NoCommand ..|> Command
+
+RemoteController o-- Command
+
+Client ..> RemoteController
+Client ..> LightReceiver
+Client ..> LightOnCommand
+Client ..> LightOffCommand
+@enduml

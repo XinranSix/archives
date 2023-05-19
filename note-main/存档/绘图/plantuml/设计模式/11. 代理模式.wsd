@@ -1,0 +1,62 @@
+@startuml
+class TargetObject {
+    operation()1:void
+    operation()2:void
+}
+
+class Proxy {
+    
+}
+
+class Client {
+    
+}
+
+Proxy ..> TargetObject
+Client ..> Proxy
+@enduml
+
+@startuml
+class TeacherDao {
+    teach():void
+}
+
+class Client {}
+
+interface ITeacherDao {
+    teach():void
+}
+
+class TeacherDaoProxy {
+    teach():void
+}
+
+TeacherDao ..|> ITeacherDao
+TeacherDaoProxy ..|> ITeacherDao
+TeacherDaoProxy o-- TeacherDao
+Client ..> TeacherDaoProxy
+Client ..> TeacherDao
+@enduml
+
+@startuml
+interface ITeacher {
+    teach():void
+}
+
+class TeacherDao {
+    teach():void
+}
+
+class ProxyFactory {
+    ProxyFactory()
+    getProxyInstance():Object
+}
+
+class Client {
+
+}
+
+TeacherDao ..|> ITeacher
+Client ..> ProxyFactory
+Client ..> TeacherDao
+@enduml

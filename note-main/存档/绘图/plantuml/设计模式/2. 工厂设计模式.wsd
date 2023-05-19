@@ -1,0 +1,43 @@
+@startuml
+abstract class Pizza {
+    {abstract} prepare():void
+    bake():void
+    cut():void
+    box():void
+}
+
+class CheessPizza {
+}
+
+class GreekPizza {
+}
+
+OrderPizza ..> CheessPizza
+OrderPizza ..> GreekPizza
+OrderPizza ..> Pizza
+PizzaStore ..> OrderPizza
+CheessPizza ..|> Pizza
+GreekPizza ..|> Pizza
+@enduml
+
+@startuml
+abstract class Pizza {
+    {abstract} prepare():void
+    bake():void
+    cut():void
+    box():void
+}
+
+class CheessPizza {
+}
+
+class GreekPizza {
+}
+
+class SimpleFactory {}
+
+OrderPizza ..> SimpleFactory
+PizzaStore ..> OrderPizza
+CheessPizza ..|> Pizza
+GreekPizza ..|> Pizza
+@enduml

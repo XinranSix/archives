@@ -1,0 +1,53 @@
+@startuml
+abstract class Handler {
+    successor:Handler
+    processRequest():void
+}
+
+class ConcreteHandlerA {}
+
+class ConcreteHandlerB {}
+
+class Request {}
+
+class Client {}
+
+ConcreteHandlerA --|> Handler
+ConcreteHandlerB --|> Handler
+
+Handler --o Handler
+
+Request <.. Handler
+Client ..> Handler
+Client ..> Request
+@enduml
+
+@startuml
+abstract class Approve {
+    approve:Approve
+    {abstract} processRequest(purchaseRequest:PurchaseRequest):void
+}
+
+class DepartmentApprove {}
+
+class CollegeApprove {}
+
+class ViceSchoolApprove {}
+
+class ViceSchoolMasterApprove {}
+
+class PurchaseRequest {}
+
+class Client {}
+
+DepartmentApprove --|> Approve
+CollegeApprove --|> Approve
+ViceSchoolApprove --|> Approve
+ViceSchoolMasterApprove --|> Approve
+
+Approve --o Approve
+Approve ..> PurchaseRequest
+
+Client ..> PurchaseRequest
+Client ..> Approve
+@enduml

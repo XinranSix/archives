@@ -1,0 +1,45 @@
+@startuml
+abstract class AbstractClass {
+    template():void
+    {abstract} operation1():void
+    {abstract} operation2():void
+    {abstract} operation3():void
+}
+
+class ConcreteClass {
+    operation1():void
+    operation2():void
+    operation3():void
+}
+
+class Client {
+    
+}
+
+ConcreteClass --|> AbstractClass
+Client ..> ConcreteClass
+@enduml
+
+@startuml
+abstract class SoyaMilk {
+    make():void
+    select():void
+    {abstract} addCondimets():void
+    soak():void
+    beat():void
+}
+
+class BlackBeanSoyaMilk {}
+
+class PennutSoyaMilk {}
+
+class Client() {
+}
+
+BlackBeanSoyaMilk --|> SoyaMilk
+PennutSoyaMilk --|> SoyaMilk
+
+Client ..> SoyaMilk
+Client ..> BlackBeanSoyaMilk
+Client ..> PennutSoyaMilk
+@enduml

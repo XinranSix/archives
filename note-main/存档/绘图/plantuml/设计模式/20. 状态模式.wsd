@@ -1,0 +1,69 @@
+@startuml
+interface State {
+    operation1():void
+    operation2():void
+}
+
+class ConcreteStateA {}
+
+class ConcreteStateB {}
+
+class Context {
+    state:State
+    getState():State
+}
+
+ConcreteStateA ..|> State
+ConcreteStateB ..|> State
+Context o-- State
+@enduml
+
+@startuml
+abstract class State {
+    deduceMoney():void
+    raffle():void
+    dispensePrize():boolean
+}
+
+class NoRaffleState {
+    deduceMoney():void
+    raffle():void
+    dispensePrize():boolean
+}
+
+class CanRaffleState {
+    deduceMoney():void
+    raffle():void
+    dispensePrize():boolean
+}
+
+class DispensePrizeState {
+    deduceMoney():void
+    raffle():void
+    dispensePrize():boolean
+}
+
+class DispenseOutState {
+    deduceMoney():void
+    raffle():void
+    dispensePrize():boolean
+}
+
+class Activity {
+}
+
+class Client {}
+
+NoRaffleState --|> State
+CanRaffleState --|> State
+DispensePrizeState --|> State
+DispenseOutState --|> State
+
+Activity -- NoRaffleState
+Activity -- CanRaffleState
+Activity -- DispensePrizeState
+Activity -- DispenseOutState
+
+Client .right.> Activity
+Client ..> State
+@enduml

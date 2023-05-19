@@ -1,0 +1,40 @@
+@startuml
+class Originator {}
+
+class Memento {
+    state:String
+}
+
+class Caretaker {
+    mementos:ArrayList<Memento>
+}
+
+class Client {}
+
+Originator ..> Memento
+Memento --o Caretaker
+Client ..> Originator
+Client ..> Memento
+@enduml
+
+@startuml
+class Memento {
+    vit:int
+    def:int
+}
+
+class Caretaker {
+    memento:Memento
+}
+
+class GameRole {
+    createMemento():Memento
+}
+
+class Client {}
+
+Caretaker o-- Memento
+GameRole ..> Memento
+Client ..> GameRole
+Client ..> Memento
+@enduml

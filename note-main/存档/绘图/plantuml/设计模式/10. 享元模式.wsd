@@ -1,0 +1,26 @@
+@startuml
+abstract class WebSite {
+    use(user:User):void
+}
+
+class ConcreteWebSite {
+    use(user:User):void
+}
+
+class WebSiteFactor {
+    getWebSiteCategory(type:String):WebSite
+}
+
+class Client {
+}
+
+class User {
+}
+
+WebSiteFactor o-- WebSite
+ConcreteWebSite --|> WebSite
+ConcreteWebSite --|> User
+Client ..> WebSiteFactor
+Client ..> ConcreteWebSite
+Client ..> User
+@enduml

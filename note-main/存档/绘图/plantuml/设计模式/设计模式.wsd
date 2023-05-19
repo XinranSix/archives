@@ -1,0 +1,45 @@
+@startuml
+class Person {
+    id:int
+    name:String
+    setName(name:String):void
+    getName():String
+}
+@enduml
+
+@startuml
+class IDCard
+class Person
+class PersonDao
+class Department
+class PersonServiceBean {
+    personDao:PersonDao
+    save(Person person):void
+    getIDCard(Integer personid):IDCard
+    modify():void
+}
+
+PersonServiceBean ..> IDCard
+PersonServiceBean ..> Person
+PersonServiceBean ..> PersonDao
+PersonServiceBean ..> Department
+@enduml
+
+@startuml
+class DaoSupport {
+    save(Object entity):void
+    delete(Object id):void
+}
+PersonServiceBean --|>DaoSupport
+@enduml
+
+@startuml
+interface PersonService {
+    delete(Integer id):void
+}
+class PersonServiceBean {
+    delete(Integer id):void
+}
+
+PersonServiceBean ..|> PersonService
+@enduml

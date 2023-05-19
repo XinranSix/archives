@@ -1,0 +1,21 @@
+@startuml
+abstract class OrganizationComponent {
+    add():void
+    remove():void
+    print():void
+}
+
+class University
+
+class College
+
+class Department
+
+class Client
+
+University o--|> OrganizationComponent
+College o--|> OrganizationComponent
+Department --|> OrganizationComponent
+
+Client ..> OrganizationComponent
+@enduml
